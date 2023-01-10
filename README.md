@@ -3,6 +3,7 @@
 **Warning: this dataset contains vulgar and offensive language (quite a lot of it).**
 
 `applications.csv` is a CSV of 23,463 personalized license plate applications the California DMV received from 2015-2016.
+`applications2017.csv` is a CSV of _nnnn_ personalized license plate applications the California DMV received in 2017 (until the process changed in July 2017; it no longer includes freeform reviewer comments).
 
 These do NOT represent all applications received by the DMV during that timeframe, only applications that were flagged for additional review by the Review Committee. The file includes the following columns:
 
@@ -12,7 +13,7 @@ These do NOT represent all applications received by the DMV during that timefram
 - `reviewer_comments`: Comments from DMV reviewers.
 - `status`: `Y` means the plate was approved, `N` means it was denied.
 
-This data was parsed from a set of 458 Excel workbooks that the DMV prepared for someone else's public records request. I received the files as a consolation prize in response to my own related records request, which I was told would cost \$2,000 to fulfill otherwise.
+This data was parsed from a set of 458 (2015-16) and 165 (2017) Excel workbooks that the DMV prepared for someone else's public records request. These files were received as consolation prizes in response to related records requests, which would have cost upwards of \$5,000 to fulfill otherwise.
 
 ## Notes
 
@@ -20,7 +21,7 @@ This data was parsed from a set of 458 Excel workbooks that the DMV prepared for
 - Some records are missing reason codes, customer meanings, reviewer comments, and/or statuses.
 - A reviewer comment of "No micro" indicates that a paper application was submitted but was unavailable in the DMV's imaging system.
 - In a few cases the reason code is some other character or word besides `Y` or `N`, possibly a typo.
-- I tried to redact any records I found that seemed to include too much personal information about the applicant (about 50 in total).
+- I tried to redact any records I found that seemed to include too much personal information about the applicant (about 50 in 2015-16).
 - Because the data is parsed from Excel workbooks that are not 100% consistent in structure, there may be some errors.
 - Review reason codes are described as follows:
 
