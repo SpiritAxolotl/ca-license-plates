@@ -4,7 +4,7 @@
 
 `applications.csv` is a CSV of 23,463 personalized license plate applications the California DMV received from 2015-2016.
 
-`applications2017.csv` is a CSV of _around 12,000_ personalized license plate applications the California DMV received in 2017 (until the process and documentation changed in mid-July 2017).
+`applications2017.csv` is a CSV of 12,046 personalized license plate applications the California DMV received in 2017 (until the process and documentation changed in mid-July 2017).
 
 These do NOT represent all applications received by the DMV during that timeframe, only applications that were flagged for additional review by the Review Committee. The file includes the following columns:
 
@@ -21,8 +21,9 @@ This data was parsed from a set of 458 (2015-16) and 165 (2017) Excel workbooks 
 - In plate combinations, a `#` character indicates a hand symbol, a `$` character indicates the heart symbol, a `+` character indicates the plus symbol, and a `&` character indicates the star symbol.
 - Some records are missing reason codes, customer meanings, reviewer comments, and/or statuses.
 - A reviewer comment of "No micro" indicates that a paper application was submitted but was unavailable in the DMV's imaging system.
+- A reviewer comment of "Quickweb unavailable" indicates that the DMV's application system was unavailable to the reviewer.
 - In a few cases the reason code is some other character or word besides `Y` or `N`, possibly a typo.
-- I tried to redact any records I found that seemed to include too much personal information about the applicant (about 50 in 2015-16). This included full names, addresses or telephone numbers.
+- I tried to redact any records I found that seemed to include too much personal information about the applicant (about 50 in 2015-16 and a simiilar number in 2017). This included full names from DMV records, home addresses or telephone numbers.
 - Because the data is parsed from Excel workbooks that are not 100% consistent in structure, there may be some errors.
 - The data is not sorted, but ordered by the date of the workbook (so earlier entries are from earlier dates, later entries are from later dates). The plates were alphabetized within each workbook.
 - Review reason codes are described as follows:
