@@ -3,6 +3,7 @@
 **Warning: this dataset contains vulgar and offensive language (quite a lot of it).**
 
 `applications.csv` is a CSV of 23,463 personalized license plate applications the California DMV received from 2015-2016.
+
 `applications2017.csv` is a CSV of _nnnn_ personalized license plate applications the California DMV received in 2017 (until the process changed in July 2017; it no longer includes freeform reviewer comments).
 
 These do NOT represent all applications received by the DMV during that timeframe, only applications that were flagged for additional review by the Review Committee. The file includes the following columns:
