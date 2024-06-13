@@ -22,13 +22,13 @@ This data was parsed from a set of 458 (2015-16) and 165 (2017) Excel workbooks 
 - Some records are missing reason codes, customer meanings, reviewer comments, and/or statuses.
 - A reviewer comment of "No micro" indicates that a paper application was submitted but was unavailable in the DMV's imaging system.
 - A reviewer comment of "Quickweb unavailable" indicates that the DMV's application system was unavailable to the reviewer.
-- In a few cases the reason code is some other character or word besides `Y` or `N`, possibly a typo.
+- In a few cases the reason code was some other character or word besides `Y` or `N`, possibly a typo. Most of the unambiguous ones were changed while all the rest were changed to "?".
 - We tried to redact any records we found that seemed to include too much personal information about the applicant (about 50 in 2015-16 and 100 in 2017). This included full names from DMV records, home addresses or telephone numbers.
 - Because the data is parsed from Excel workbooks that are not 100% consistent in structure, there may be some errors.
 - The data is not sorted, but ordered by the date of the workbook (so earlier entries are from earlier dates, later entries are from later dates). The plates were alphabetized within each workbook.
 - Review reason codes are described as follows:
 
-```
+```md
 7(B) When a desired configuration is not available, a letter shall not be substituted for a number, nor shall a number be substituted for a letter, to create another configuration of a similar appearance.
 7(D) The department shall refuse any configuration that may carry connotations offensive to good taste and decency, or which would be misleading, based on criteria which includes, but is not limited to, the following:
     1. The configuration has a sexual connotation or is a term of lust or depravity.
